@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>association</name>
+	<name>Multithreading-intro01</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1765813003422</id>
+			<id>1765899115042</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
