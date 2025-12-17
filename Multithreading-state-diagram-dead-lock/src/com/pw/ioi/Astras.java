@@ -39,14 +39,14 @@ public class Astras implements Runnable {
 	private void ravanaAcqResources() {
 
 		try { 
-			   synchronized (res1) {
-				  System.out.println("ravana has acquired "+ res1);
+			   synchronized (res3) {
+				  System.out.println("ravana has acquired "+ res3);
 				  Thread.sleep(2000);
 				  synchronized (res2) {
 					  System.out.println("ravana has acquired "+ res2);
 					  Thread.sleep(2000);
-					  synchronized (res3) {
-						  System.out.println("ravana has acquired "+ res3);
+					  synchronized (res1) {
+						  System.out.println("ravana has acquired "+ res1);
 						  Thread.sleep(2000);
 					}
 				}
