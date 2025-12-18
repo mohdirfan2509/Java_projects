@@ -3,7 +3,7 @@ package com.pw.ioi;
 public class Queue {
 	private int x=0;
 	boolean value_present_in_x=false;
-	public void put(int j) throws InterruptedException {
+	public synchronized void put(int j) throws InterruptedException {
 		
 		
 		if(value_present_in_x==true) {
@@ -16,12 +16,12 @@ public class Queue {
 		}
 		
 	}
-	public void get() throws InterruptedException {
+	public synchronized void get() throws InterruptedException {
 		if(value_present_in_x==false) {
 			wait();
 		}else {
 			
-			System.out.println("I have consumed "+x);
+			System.out.println("I have consumed !! "+x);
 			value_present_in_x=false;
 			notify();
 		}

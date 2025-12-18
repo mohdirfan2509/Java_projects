@@ -14,7 +14,7 @@ public class Consumer extends Thread {
     	   while(true) {
     		   try {
 				q.get();
-				Thread.sleep(5000);
+				Thread.sleep(2000);
 			   } catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

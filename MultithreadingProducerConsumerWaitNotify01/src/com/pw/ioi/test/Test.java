@@ -10,6 +10,8 @@ public class Test {
 		Queue q=new Queue();
 		Producer pr=new Producer(q);
 		Consumer cr= new Consumer(q);
+		pr.start();
+		cr.start();
 	
 	}
 
