@@ -1,53 +1,57 @@
 package com.pw.ioi;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
 
 public class testing {
 
 	public static void main(String[] args) {
+		char [][] arr = null;
 		
-		HashMap<Integer,Integer> hm= new HashMap<Integer,Integer>();
-		
-		int [] arr = {2,3,2,4,4,4,3};
-		
-		for(int i=0;i<7;i++) {
+	    int n=10;
+	    
+		for(int k=0;k<5;k++) {
 			
-		     hm.putIfAbsent(arr[i],0);
-		     Integer x=hm.get(arr[i]);
-		     hm.replace(arr[i], x, ++x);
-		     
-		     
-		
+			int i=k;
+			int j=k;
+			n--;
+			int m=k;
+
 			
 			
-//			if(hm.containsKey(arr[i])) {
-//				
-//				Integer x=hm.get(arr[i]);
-//			
-//				hm.replace(arr[i],x,++x);
-//				
-//				
-//			}else {
-//				hm.put(arr[i], 1);
-//			
-//			}
+//			******* TOP ROW *******
+			while(j<n) {
+//				arr[i][j]='a';
+				System.out.println("( "+i +" , "+j+" )");
+				
+				j++;
+			}
 			
+//			******* RIGHT COLUMN *******
+			while(i<n) {
+//				arr[i][j]='a';
+				System.out.println("( "+i +" , "+j+" )");
+				i++;
+			}
+			
+//			******* BOTTOM ROW *******
+			while(j>m) {
+//				arr[i][j]='a';
+				System.out.println("( "+i +" , "+j+" )");
+				j--;
+			}
+			
+//			******* LEFT COLUMN *******
+			while(i>m){
+//				arr[i][j]='a';
+				System.out.println("( "+i +" , "+j+" )");
+				i--;
+				
+			}
+			System.out.println("********ROUND "+(k+1)+" IS DONE **********");
 		}
-		Iterable<Integer> arr2= hm.values();
-		Object[] arr3=hm.values().toArray();
-		System.out.println(arr3);
 		
-//		LinkedHashMap<Integer,Integer> lhm= new LinkedHashMap<Integer,Integer>();
-//		
-//		lhm.put(1, 2);
-//		lhm.put(2, 4);
-//		lhm.put(3, 6);
-//		
-//		System.out.println(lhm);
+
 		
-		
+
 
 	}
 
