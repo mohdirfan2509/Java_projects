@@ -1,7 +1,6 @@
 package com.pw.ioi;
 
 import java.util.Scanner;
-
 public class Halloumi {
 
 	public static void main(String[] args) {
