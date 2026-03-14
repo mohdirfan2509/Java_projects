@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main8 {
 
 	public static void main(String[] args) {
-		
 		Scanner scan= new Scanner(System.in);
 		int test_cases=scan.nextInt();
 		for(int i=0;i<test_cases;i++) {
