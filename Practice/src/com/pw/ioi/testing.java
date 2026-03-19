@@ -1,25 +1,20 @@
 package com.pw.ioi;
 
+import java.util.ArrayList;
 
 public class testing {
 
 	public static void main(String[] args) {
 		
-		  switch(2)
-          { 
-                case 1:
-                System.out.println("One");
-                case 2:
-                System.out.println("Two");
-                case 3:
-                System.out.println("Three");
-                default:
-                System.out.println("Default");
-                break;
-          }
-		
-		
-
+		ArrayList<Integer> al= new ArrayList();
+		al.add(10);
+		al.add(20);
+		al.add(30);
+		al.add(40);
+		al.add(50);
+		System.out.println(al);
+		al.remove(0);
+		System.out.println(al.get(0));
 	}
 
 }
