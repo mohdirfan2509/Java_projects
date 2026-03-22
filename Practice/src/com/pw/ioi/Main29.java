@@ -1,4 +1,6 @@
-import java.util.*;
+package com.pw.ioi;
+
+import java.util.Scanner;
 
 public class Main29 {
     public static void main(String[] args) {
